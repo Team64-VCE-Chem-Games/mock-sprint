@@ -10,10 +10,8 @@ export const metadata: Metadata = {
 export default function TeamPage() {
   return (
     <div className="space-y-6 max-w-2xl">
-      <div>
-        <h1 className="text-2xl font-bold tracking-tight">Team Page</h1>
-        <p className="text-zinc-500 text-sm mt-1">We will set up the team page here</p>
-        <div className="flex flex-row gap-0">
+      <div className= "flex flex-col items-center gap-4">
+        <div className="flex items-center justify-center flex-row gap-0">
         <PeriodicTable 
           number={52}
           symbol="Te"
@@ -29,6 +27,7 @@ export default function TeamPage() {
           border="border-blue-800"
         />
         </div>
+        <h1 className="text-2xl font-bold tracking-tight">Meet the team!</h1>
       </div>
 
       <div className="space-y-6">
