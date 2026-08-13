@@ -36,7 +36,7 @@ export function CreateNoteForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 rounded-lg border p-4">
       <div className="space-y-1.5">
-        <label htmlFor="title" className="text-sm font-medium">
+        <label htmlFor="title" className="text-sm font-medium text-black">
           Title
         </label>
         <input
@@ -56,7 +56,7 @@ export function CreateNoteForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="body" className="text-sm font-medium">
+        <label htmlFor="body" className="text-sm font-medium text-black">
           Body
         </label>
         <textarea
@@ -71,7 +71,7 @@ export function CreateNoteForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+        className="rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-200 dark:text-black dark:hover:bg-zinc-100"
       >
         {isSubmitting ? 'Saving…' : 'Add note'}
       </button>
