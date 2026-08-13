@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TeamPage() {
   return (
-    <div className="space-y-6 max-w-2xl rounded-2xl border border-zinc-200 bg-olive-50 p-6 shadow-sm">
+    <div className="w-full max-w-5xl mx-auto space-y-6 rounded-2xl border border-zinc-200 bg-olive-50 px-10 py-10 shadow-sm">
       <div className= "flex flex-col items-center gap-4">
         <div className="flex items-center justify-center flex-row gap-0">
         <PeriodicTable 
@@ -30,7 +30,7 @@ export default function TeamPage() {
         <h1 className="text-2xl text-black tracking-tight">Meet the team!</h1>
       </div>
 
-      <div className="space-y-6 grid grid-cols-2 gap-4">
+      <div className="space-y-6 grid grid-cols-2 gap-10">
         {bios.map((bio) => (
           <div
             key={bio.name}

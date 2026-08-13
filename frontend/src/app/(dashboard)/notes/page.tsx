@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: 'Notes' }
 export default async function NotesPage() {
   await requireAuth()
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 rounded-2xl border border-zinc-200 bg-olive-50 px-10 py-10 shadow-sm">
       <PageHeader title="Notes" description="Your personal notes" />
       <CreateNoteForm />
       <NotesList />

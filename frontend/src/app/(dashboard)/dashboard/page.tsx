@@ -16,9 +16,9 @@ export default async function DashboardPage() {
   const greetingName = displayName ?? session?.email ?? null
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 rounded-2xl border border-zinc-200 bg-olive-50 px-10 py-10 shadow-sm">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight">Dashboard</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-black">Dashboard</h1>
         <p className="mt-1 text-sm text-zinc-500">
           Welcome back{greetingName ? `, ${greetingName}` : ''}.
         </p>

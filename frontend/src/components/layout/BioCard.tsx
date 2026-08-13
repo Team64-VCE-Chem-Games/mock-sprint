@@ -9,7 +9,7 @@ type BioCardProps = {
 
 export default function BioCard({ bio }: BioCardProps) {
   return (
-    <article className="w-full flex flex-col gap-6">
+    <article className="max-w-lg flex flex-col gap-6">
       {/* IMAGE */}
         <div className="relative w-32 aspect-square rounded-full overflow-hidden border-4 border-[#B3E88F]">
           <Image
@@ -25,7 +25,7 @@ export default function BioCard({ bio }: BioCardProps) {
             <h1 className="font-heading text-3xl text-black">
               {bio.name}
             </h1>
-            <h2 className="font-heading text-xl rounded-2xl px-8 py-1 bg-[#B3E88F] text-white inline-block">
+            <h2 className="font-heading text-lg rounded-2xl px-8 py-1 bg-[#B3E88F] text-white inline-block">
               {bio.role}
             </h2>
           </div>

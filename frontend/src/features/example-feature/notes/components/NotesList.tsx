@@ -21,7 +21,7 @@ export function NotesList() {
     <ul className="space-y-2">
       {notes.map((note) => (
         <li key={note.id} className="rounded-lg border p-4">
-          <h3 className="font-medium">{note.title}</h3>
+          <h3 className="font-medium text-black">{note.title}</h3>
           <p className="text-sm text-zinc-500">{note.body}</p>
         </li>
       ))}
