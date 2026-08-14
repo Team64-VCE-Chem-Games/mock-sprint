@@ -27,7 +27,7 @@ export const bios: Bio[] = [
   {
     name: 'Bailey Shield',
     role: 'Developer',
-    about: 'placeholder placeholder placeholder placeholder placeholder placeholder placeholder',
+    about: 'Hi! I'm Bailey, and I'm a fourth year Computer and Network Engineering student. I chose this project because I have an interest in game development and an interest in chemistry, so this seemed like the best of both worlds. I'm proficient in object-oriented programming and principles, so I hope to be able to apply that expertise in this project.',
     photo: '/images/bio/bailey.png' // change to actual file name
   },
   {
