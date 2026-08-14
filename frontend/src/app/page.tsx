@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { PeriodicTable } from '@/components/layout/PeriodicTable'
 
 export const metadata: Metadata = {
   title: 'Home - VCE Chemistry Games',
@@ -8,22 +9,26 @@ export const metadata: Metadata = {
 
 export default function LandingPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-[#9bd58a] p-8">
+    <main className="aurora-bg flex min-h-screen flex-col items-center justify-center p-8">
       <div className="flex flex-col items-center gap-8">
 
         {/* VCE periodic-table logo */}
         <div className="flex">
-          <div className="flex h-30 w-30 flex-col justify-between border-4 border-blue-800 bg-blue-600 p-2 text-white shadow-lg">
-            <span className="text-lg font-semibold leading-none">23</span>
-            <span className="text-center text-5xl font-bold leading-none">V</span>
-            <span className="text-center text-base leading-none">Vanadium</span>
-          </div>
+          <PeriodicTable
+            number={23}
+            symbol="V"
+            name="Vanadium"
+            bg="bg-blue-600"
+            border="border-blue-800"
+          />
 
-          <div className="flex h-30 w-30 flex-col justify-between border-4 border-green-700 bg-lime-500 p-2 text-white shadow-lg">
-            <span className="text-lg font-semibold leading-none">58</span>
-            <span className="text-center text-5xl font-bold leading-none">Ce</span>
-            <span className="text-center text-base leading-none">Cerium</span>
-          </div>
+          <PeriodicTable
+            number={58}
+            symbol="Ce"
+            name="Cerium"
+            bg="bg-lime-500"
+            border="border-green-700"
+          />
         </div>
 
         <h1 className="text-4xl font-normal tracking-tight text-zinc-900">

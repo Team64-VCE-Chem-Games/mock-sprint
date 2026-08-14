@@ -99,7 +99,7 @@ export default function SignInPage() {
           <span className="w-full border-t border-zinc-200" />
         </div>
         <div className="relative flex justify-center text-xs uppercase">
-          <span className="bg-zinc-50 px-2 text-zinc-400">or</span>
+          <span className="bg-white px-2 text-zinc-400">or</span>
         </div>
       </div>
 
@@ -151,7 +151,7 @@ export default function SignInPage() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2.5 text-sm text-zinc-900 shadow-sm placeholder:text-zinc-400 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none aria-invalid:border-red-500"
+          className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2.5 text-sm font-medium text-zinc-900 shadow-sm transition-colors hover:bg-zinc-50 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
         >
           {isSubmitting ? 'Signing in…' : 'Sign in'}
         </button>
