@@ -9,7 +9,7 @@ export const bios: Bio[] = [
   {
     name: 'Madi Powell',
     role: 'Project Manager',
-    about: 'placeholder placeholder placeholder placeholder placeholder placeholder placeholder',
+    about: 'I am a final-year ICT student minoring in Data Science at RMIT University. I chose this project because I am passionate about alternative ways of learning in school. As someone also studying Early Childhood Care and Education, I understand the challenges of non-interactive study. In this project team I bring clear communication and organisational skills.',
     photo: '/images/bio/madi.png' // change to actual file name
   },
   {
