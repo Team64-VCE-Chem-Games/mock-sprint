@@ -26,10 +26,6 @@ export function proxy(req: NextRequest) {
     return NextResponse.redirect(new URL('/teampage', req.url))
   }
 
-  if (pathname === '/dashboard' && isAuthenticated) {
-    return NextResponse.redirect(new URL('/teampage', req.url))
-  }
-
   return NextResponse.next()
 }
 
