@@ -2,38 +2,50 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Home',
-  description: 'Welcome to the app',
+  title: 'Home - VCE Chemistry Games',
+  description: 'VCE Chemistry Games',
 }
 
 export default function LandingPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-8 p-8">
-      <div className="space-y-4 text-center">
-        <h1 className="text-4xl font-bold tracking-tight">
-          {process.env.NEXT_PUBLIC_APP_NAME ?? 'App'}
+    <main className="flex min-h-screen flex-col items-center justify-center bg-[#9bd58a] p-8">
+      <div className="flex flex-col items-center gap-8">
+
+        {/* VCE periodic-table logo */}
+        <div className="flex">
+          <div className="flex h-30 w-30 flex-col justify-between border-4 border-blue-800 bg-blue-600 p-2 text-white shadow-lg">
+            <span className="text-lg font-semibold leading-none">23</span>
+            <span className="text-center text-5xl font-bold leading-none">V</span>
+            <span className="text-center text-base leading-none">Vanadium</span>
+          </div>
+
+          <div className="flex h-30 w-30 flex-col justify-between border-4 border-green-700 bg-lime-500 p-2 text-white shadow-lg">
+            <span className="text-lg font-semibold leading-none">58</span>
+            <span className="text-center text-5xl font-bold leading-none">Ce</span>
+            <span className="text-center text-base leading-none">Cerium</span>
+          </div>
+        </div>
+
+        <h1 className="text-4xl font-normal tracking-tight text-zinc-900">
+          Chemistry Games
         </h1>
-        <p className="max-w-md text-lg text-zinc-600 dark:text-zinc-400">
-          Your app description goes here. Edit{' '}
-          <code className="rounded bg-zinc-100 px-1 py-0.5 font-mono text-sm dark:bg-zinc-800">
-            src/app/page.tsx
-          </code>{' '}
-          to get started.
-        </p>
-      </div>
-      <div className="flex gap-4">
-        <Link
-          href="/auth/signin"
-          className="inline-flex items-center justify-center rounded-md bg-black px-6 py-2.5 text-sm font-medium text-white shadow transition-colors hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
-        >
-          Sign in
-        </Link>
-        <Link
-          href="/auth/signup"
-          className="inline-flex items-center justify-center rounded-md border border-zinc-200 bg-white px-6 py-2.5 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800"
-        >
-          Create account
-        </Link>
+
+        <div className="flex gap-4">
+          <Link
+            href="/auth/signin"
+            className="inline-flex min-w-40 items-center justify-center border border-zinc-300 bg-white px-8 py-5 text-lg font-medium text-zinc-900 shadow-lg transition-colors hover:bg-zinc-100"
+          >
+            Sign in
+          </Link>
+
+          <Link
+            href="/auth/signup"
+            className="inline-flex min-w-52 items-center justify-center border border-zinc-300 bg-white px-8 py-5 text-lg font-medium text-zinc-900 shadow-lg transition-colors hover:bg-zinc-100"
+          >
+            Create account
+          </Link>
+        </div>
+
       </div>
     </main>
   )
