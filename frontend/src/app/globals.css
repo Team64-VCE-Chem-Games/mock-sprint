@@ -16,11 +16,54 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    --font-heading: 'Nunito', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adapted from https://dev.to/oobleck/css-aurora-effect-569n */
+.aurora-bg {
+  position: relative;
+  background-color: #507DBC;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.aurora-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  background-image: radial-gradient(transparent 0, transparent 20%),
+    radial-gradient(at 62% 9%, #72E525 0px, transparent 50%),
+    radial-gradient(at 69% 60%, #B3E88F 0px, transparent 50%),
+    radial-gradient(at 24% 89%, #388B00 0px, transparent 50%),
+    radial-gradient(at 51% 77%, #8ACB88 0px, transparent 50%),
+    radial-gradient(at 78% 92%, #788D69 0px, transparent 50%);
+  animation: aura 6s linear infinite;
+  will-change: transform;
+}
+
+@keyframes aura {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+  33.333% {
+    transform: translate3d(-8%, 5%, 0);
+  }
+  66.666% {
+    transform: translate3d(5%, -8%, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
 }

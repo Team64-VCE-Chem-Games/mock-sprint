@@ -9,27 +9,9 @@ type BioCardProps = {
 
 export default function BioCard({ bio }: BioCardProps) {
   return (
-    <article className="w-full flex flex-col gap-6">
-      <div className="w-full grid grid-cols-1 lg:grid-cols-[1fr_500px] gap-10">
-        {/* LEFT COLUMN */}
-        <div className="flex flex-col gap-4">
-          <div>
-            <h1 className="font-heading text-3xl font-bold text-(--color-text-primary)">
-              {bio.name}
-            </h1>
-            <h2 className="font-heading text-xl text-(--color-text-primary)">
-              {bio.role}
-            </h2>
-          </div>
-
-          {/* Summary */}
-          <p className="text-(--color-text-primary) leading-relaxed text-pretty">
-            {bio.about}
-          </p>
-        </div>
-
-        {/* RIGHT COLUMN */}
-        <div className="relative w-full aspect-square">
+    <article className="max-w-lg flex flex-col gap-6">
+      {/* IMAGE */}
+        <div className="relative w-32 aspect-square rounded-full overflow-hidden border-4 border-[#B3E88F]">
           <Image
             src={bio.photo}
             alt={`${bio.name} preview`}
@@ -37,7 +19,22 @@ export default function BioCard({ bio }: BioCardProps) {
             className="object-cover"
           />
         </div>
-      </div>
+        {/* LEFT COLUMN */}
+        <div className="flex flex-col gap-4">
+          <div>
+            <h1 className="font-heading text-3xl text-black">
+              {bio.name}
+            </h1>
+            <h2 className="font-heading text-lg rounded-2xl px-8 py-1 bg-[#B3E88F] text-white inline-block">
+              {bio.role}
+            </h2>
+          </div>
+
+          {/* Summary */}
+          <p className="text-black leading-relaxed text-pretty">
+            {bio.about}
+          </p>
+        </div>
     </article>
   )
 }
