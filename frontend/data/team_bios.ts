@@ -33,7 +33,7 @@ export const bios: Bio[] = [
   {
     name: 'Lucas B',
     role: 'Developer',
-    about: 'placeholder placeholder placeholder placeholder placeholder placeholder placeholder',
-    photo: '/images/bio/lucas.png' // change to actual file name
+    about: 'I am a final year Bachelor of IT student at RMIT University with a particular interest in networking, systems and software development. I chose this project because I have always been interested in video games and thought this would be an excellent opportunity to learn more about their development.\n\nI enjoy problem solving and troubleshooting and bring experience with networking, Git, system administration and software development to the project. I am also always keen to learn new technologies and figure out how things work!',
+    photo: '/images/bio/lucas.png'
   }
 ]
