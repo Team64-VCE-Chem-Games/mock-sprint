@@ -15,7 +15,7 @@ export const bios: Bio[] = [
   {
     name: 'Lem Abrenio',
     role: 'UX Designer',
-    about: 'placeholder placeholder placeholder placeholder placeholder placeholder placeholder',
+    about: 'UX-Designer for team!, I love graphic design, video editing, and photography lets me finally use my passion for school! I enjoy watching Valorant Esports (especially my favorite team Paper Rex!) and playing video games (mostly Valorant) in my free time. I also enjoy spending time with my friends and family. Currently Studying Bachelor of Information Technology at RMIT University. As someone who really loves gaming, this project stood out to me, as it also allowed me to explore Chemistry again, something I have not done since 2023!',
     photo: '/images/bio/lem.png' // change to actual file name
   },
   {
